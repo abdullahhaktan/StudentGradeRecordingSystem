@@ -7,3 +7,7 @@
 - .cs dosyaları ile yönetim
 - ADO.NET ile veri tabanı yönetimi
 
+
+## Nasıl Çalıştırılır
+
+backup'ı mssql serverınıza kurarak veri tabanı bağlantılarını düzenleyip projeyi çalıştırabilirsiniz
