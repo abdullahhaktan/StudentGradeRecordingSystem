@@ -22,17 +22,15 @@ Bu proje, bir eğitim kurumu için geliştirilmiş, öğrenci notlarını kaydet
 
 ### Teknik Özellikler
 
-* **ASP.NET Core MVC/Web API**.
-* **Entity Framework Core (EF Core)**: Veritabanı işlemleri.
+* Windows form tabanlı yaklaşım
+* **Entity Framework **: Veritabanı işlemleri.
 * **Database First Yaklaşımı**: Modeller, var olan veritabanı şemasından iskelenmiştir.
-* **ASP.NET Core Identity**: Kullanıcı (Öğrenci/Öğretmen) kimlik yönetimi.
-* **Katmanlı mimari**.
 
 ### Kullanıcı / Panel Özellikleri
 
 * **Öğretmen Paneli**: Öğrenci ve ders yönetimi, not girişi (CRUD).
 * **Öğrenci Paneli**: Kendi notlarını ve ortalamalarını görüntüleme.
-* **Yetkilendirme**: Kullanıcı rolüne (Öğrenci/Öğretmen) göre erişim kontrolü.
+* **Yetkilendirme**: Giriş kontrolüne göre erişim kontrolü.
 
 ---
 
@@ -41,16 +39,16 @@ Bu proje, bir eğitim kurumu için geliştirilmiş, öğrenci notlarını kaydet
 Bu projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyin:
 
 1.  **Gereksinimler:**
-    * **[.NET SDK 6.0 veya üzeri](https://dotnet.microsoft.com/download)**
+    * **[.NET Framework]**
     * **[SQL Server](https://www.microsoft.com/en-us/sql-server)** (veya SQL Server Express)
-
+    * 
 2.  **Projeyi Klonlama:**
     ```bash
     git clone [https://github.com/abdullahhaktan/StudentGradeRecordingSystem.git](https://github.com/abdullahhaktan/StudentGradeRecordingSystem.git)
     cd StudentGradeRecordingSystem
     ```
 
-3.  **Bağımlılıkları Yükleme:**
+3.  **Bağımlılıkları Yükleme: (Gerekirse) **
     ```bash
     dotnet restore
     ```
@@ -74,61 +72,61 @@ Bu projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izl
 
 [EN]
 
-# StudentGradeRecordingSystem
+**Student Grade Recording System (ASP.NET Core MVC/Web API)**
+
+---
 
 ## 💻 About the Project
 
-This project is a student grade recording and management system, built using **ASP.NET Core** technologies and a **Database First** approach. It operates on a **predefined database schema**. Since **EF Core Migrations** is not used, manual database creation is mandatory.
+This project is a system developed for an educational institution to record and manage student grades. The application operates on a **predefined database schema** using **ASP.NET Core** technologies and the **Database First** approach. **EF Core Migrations** is not used, making the manual creation of the database mandatory.
 
 ---
 
-## ✨ Core Features
+## ✨ Key Features
 
-### Technical Features
+### Technical Specifications
 
-* **ASP.NET Core MVC/Web API**.
-* **Entity Framework Core (EF Core)**: Database operations.
-* **Database First Approach**: Models are scaffolded from an existing database schema.
-* **ASP.NET Core Identity**: User (Student/Teacher) identity management.
-* **Layered architecture**.
+* Windows Forms-based approach
+* **Entity Framework**: Database operations.
+* **Database First Approach**: Models are scaffolded from the existing database schema.
 
-### User / UI Features
+### User / Panel Features
 
 * **Teacher Panel**: Student and course management, grade entry (CRUD).
-* **Student Panel**: Viewing personal grades and averages.
-* **Authorization**: Access control based on user role.
+* **Student Panel**: Viewing their own grades and averages.
+* **Authorization**: Access control based on login credentials.
 
 ---
 
-### 🚀 How to Run
+### 🚀 How to Run?
 
-Follow these steps to set up and run the project locally:
+Follow the steps below to run this project in your local environment:
 
-1.  **Prerequisites:**
-    * **[.NET SDK 6.0 or higher](https://dotnet.microsoft.com/download)**
+1.  **Requirements:**
+    * **[.NET Framework]**
     * **[SQL Server](https://www.microsoft.com/en-us/sql-server)** (or SQL Server Express)
-
-2.  **Cloning the Project:**
+    *
+2.  **Clone the Project:**
     ```bash
     git clone [https://github.com/abdullahhaktan/StudentGradeRecordingSystem.git](https://github.com/abdullahhaktan/StudentGradeRecordingSystem.git)
     cd StudentGradeRecordingSystem
     ```
 
-3.  **Installing Dependencies:**
+3.  **Install Dependencies: (If necessary)**
     ```bash
     dotnet restore
     ```
 
 4.  **Database Configuration:**
-    * Open the **`appsettings.json`** file and update the **DefaultConnection** string in the `ConnectionStrings` section to match your local SQL Server settings.
-    * *(Note: The database name in this string must match the name of the database you create manually.)*
+    * Open the **`appsettings.json`** file and update the `ConnectionStrings` section with your local SQL Server settings.
+    * *(Note: The database name in this string must match the name of the database you will create manually.)*
 
-5.  **Creating the Database (REQUIRED MANUAL STEP):**
+5.  **Create the Database (MANDATORY MANUAL STEP):**
     * Since **Migrations** are not used, you must create the database manually.
-    * Locate the **SQL script file** (`.sql` extension) within the project.
-    * Use a tool like SQL Server Management Studio (SSMS) to run this script and **create the database schema**.
+    * Please locate the **SQL script file** (with a `.sql` extension) within the project.
+    * Run this script using a tool like SQL Server Management Studio (SSMS) to **create the database schema**.
 
-6.  **Running the Project:**
+6.  **Run the Project:**
     ```bash
     dotnet run
     ```
@@ -138,3 +136,4 @@ Follow these steps to set up and run the project locally:
 <img width="448" height="263" alt="Ekran görüntüsü 2025-10-12 162516" src="https://github.com/user-attachments/assets/0280a1a9-8027-48fa-9cc5-45b357dfb9c8" />
 
     
+
